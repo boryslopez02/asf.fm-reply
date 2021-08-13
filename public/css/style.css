@@ -1,0 +1,343 @@
+/* Vars */
+.navbar {
+  background-color: #000;
+  -webkit-transition: .3s linear all;
+  transition: .3s linear all;
+}
+
+.navbar .navbar-brand img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 45px;
+  height: 45px;
+}
+
+.navbar .nav-item .nav-link {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  color: #d1d1d1;
+  -webkit-transition: color .6s ease all;
+  transition: color .6s ease all;
+}
+
+.navbar .nav-item .nav-link:hover {
+  color: #fff;
+}
+
+.navbar .nav-item .router-link-exact-active {
+  color: #FF0A00;
+  font-weight: 700;
+}
+
+.navbar .nav-item .router-link-exact-active::before {
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+.main .fade-enter-active, .main .fade-leave-active {
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.main .fade-enter, .main .fade-leave-to {
+  opacity: 0;
+}
+
+.banner {
+  position: relative;
+  min-height: calc(100vh - 55px);
+}
+
+.banner .container {
+  position: relative;
+  z-index: 2;
+}
+
+.banner .container .col-12 {
+  width: 100%;
+  max-width: 400px;
+}
+
+.banner .container .col-12 .logo {
+  width: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.banner .container .col-12 h1 {
+  font-size: 31px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.banner .container .col-12 a.text-danger {
+  text-decoration: none;
+  font-size: 16px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.banner .container .col-12 a.text-danger:hover {
+  color: #ca1c16;
+}
+
+.banner .container .col-12 .lead {
+  font-size: 16px;
+  text-align: center;
+}
+
+.banner .container .col-12 .form-register {
+  font-size: 14px;
+}
+
+.banner .container .col-12 .form-register .form-control {
+  font-size: 15px;
+  border-radius: 0;
+}
+
+.banner .container .col-12 .form-register .small {
+  font-size: 14px;
+  text-align: center;
+}
+
+.banner .container .col-12 .form-register .small .text-danger {
+  font-size: 14px;
+}
+
+.banner .container .col-12 .form-register .btn {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  background: crimson;
+  border: 1px solid crimson;
+  letter-spacing: 1px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.banner .container .col-12 .form-register .btn:hover {
+  background: #ca1c16;
+  border: 1px solid #ca1c16;
+}
+
+.banner .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: #000000b7;
+}
+
+.banner .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: .6s .3s ease-in all;
+  transition: .6s .3s ease-in all;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    min-height: 75vh;
+  }
+}
+
+.ui-entry {
+  min-height: 100vh;
+  background: #000;
+}
+
+.ui-entry .container {
+  position: relative;
+  z-index: 2;
+}
+
+.ui-entry .container .logo {
+  width: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.ui-entry .container form.card {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.ui-entry .container form.card h1 {
+  font-size: 31px;
+  font-weight: 600;
+}
+
+.ui-entry .container form.card h2 {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.ui-entry .container form.card .form-control {
+  font-size: 15px;
+  border-radius: 0;
+}
+
+.ui-entry .container form.card .small {
+  font-size: 14px;
+}
+
+.ui-entry .container form.card .small .text-danger {
+  font-size: 14px;
+}
+
+.ui-entry .container form.card .d-flex {
+  position: relative;
+}
+
+.ui-entry .container form.card .d-flex label {
+  cursor: pointer;
+}
+
+.ui-entry .container form.card .btn {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  background: crimson;
+  border: 1px solid crimson;
+  letter-spacing: 1px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.ui-entry .container form.card .btn:hover {
+  background: #ca1c16;
+  border: 1px solid #ca1c16;
+}
+
+.ui-entry .container .text-danger {
+  text-decoration: none;
+  font-size: 16px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.ui-entry .container .text-danger:hover {
+  color: #ca1c16;
+}
+
+.ui-entry .container .social-links {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.ui-entry .container .social-links a {
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  width: 25%;
+  padding: 8px;
+  border-radius: 8px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.ui-entry .container .social-links a:hover {
+  background: white;
+}
+
+.ui-entry .container .social-links .fb {
+  background: #4361e4;
+}
+
+.ui-entry .container .social-links .fb:hover {
+  color: #4361e4;
+}
+
+.ui-entry .container .social-links .ig {
+  background: #ff3456;
+}
+
+.ui-entry .container .social-links .ig:hover {
+  color: #ff3456;
+}
+
+.ui-entry .container .social-links .tw {
+  background: #348cff;
+}
+
+.ui-entry .container .social-links .tw:hover {
+  color: #348cff;
+}
+
+.ui-entry .container .social-links .gg {
+  background: #b80000;
+}
+
+.ui-entry .container .social-links .gg:hover {
+  color: #b80000;
+}
+
+.ui-entry .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: #000000b7;
+}
+
+.ui-entry .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: .6s .3s ease-in all;
+  transition: .6s .3s ease-in all;
+}
+
+.footer-light .container {
+  max-width: 950px;
+}
+
+.footer-light .container a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.footer-light .container a:hover {
+  color: #FF0A00;
+}
+
+.footer-light .container .d-flex .social-links a {
+  font-size: 15px;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer-light .container .d-flex .social-links a i {
+  color: #d1d1d1;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.footer-light .container .d-flex .social-links a i:hover {
+  color: #FF0A00;
+}

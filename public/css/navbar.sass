@@ -1,0 +1,23 @@
+.navbar 
+    background-color: $dark
+    transition: .3s linear all
+    .navbar-brand
+        img
+            object-fit: contain
+            width: 45px
+            height: 45px
+    .nav-item
+        .nav-link
+            position: relative
+            font-size: 16px
+            font-weight: 400
+            color: $light
+            transition: color .6s ease all
+            &:hover
+                color: #fff
+        .router-link-exact-active
+            color: $danger
+            font-weight: 700
+            &::before
+                transform: translate(-50%, 0)
+                opacity: 1

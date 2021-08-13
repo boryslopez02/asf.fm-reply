@@ -1,0 +1,8 @@
+.main .fade-enter-active, .main .fade-leave-active {
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.main .fade-enter, .main .fade-leave-to {
+  opacity: 0;
+}

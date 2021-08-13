@@ -1,0 +1,7 @@
+.navbar .nav-item .nav-link {
+  color: blue;
+}
+
+.navbar .nav-item .router-link-exact-active {
+  color: red;
+}
